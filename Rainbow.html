@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Rainbow</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			margin: 20%;
+		}
+		button{
+			cursor: pointer;
+			background-color: darkviolet;
+		}
+		h1{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<h1>THE SEVEN COLOURS--!</h1>
+	<button id="but"><h3>Click here!</h3></button>
+<script>
+	const btn=document.getElementById('but');
+	const body=document.querySelector('body');
+	const color=['red','orange','yellow','green','blue','indigo','violet'];
+	document.addEventListener('click',function(){
+	const colorIndex=parseInt(Math.random()*color.length);
+	body.style.backgroundColor=color[colorIndex];
+	});
+ </script>
+</body>
+</html>
+
